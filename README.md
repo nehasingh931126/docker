@@ -143,6 +143,36 @@ With that we can package our application into an image and run it virtually anyw
 
 
 
+## Start
+First if you need to just run the app.js file
+> Start with an OS
+> Install Node
+> Copy App files
+> Run node app.js
+
+And this is just for a small application and if we are using some complex application then we need to create a complex
+release document that needs to be precisely followed
+
+Writing a Docker File
+FROM node:alpine
+COPY . /app
+WORKDIR /app
+CMD node app.js
+
+
+How to run 
+docker build -t hellow-docker .
+docker images: To check all the images
+
+REPOSITORY     TAG       IMAGE ID       CREATED              SIZE
+hello-docker   latest    c68ea6b55be9   About a minute ago   177MB
+
+node:alpine: Very Small Image
+
+Now you can run 
+docker run hello-docker:TO run this image
+
+
 
 
 
