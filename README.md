@@ -173,6 +173,14 @@ Now you can run
 docker run hello-docker:TO run this image
 
 
+We can take any application and dockerise it by adding the docker file to it
+
+
+
+Docker is buits its basic on Linux concepts
+
+
+
 
 
 
